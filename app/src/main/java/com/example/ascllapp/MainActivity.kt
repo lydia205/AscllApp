@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         // get my textview come from activity_main
         val txtDisplay = findViewById<TextView>(R.id.txtDisplay)
 
-        // dec
+        // decared the control variable
 
 
 
