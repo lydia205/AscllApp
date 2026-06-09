@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         val txtDisplay = findViewById<TextView>(R.id.txtDisplay)
 
         // decared the control variable
+        var counter = 1
+        
 
 
 
