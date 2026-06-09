@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         // decared the control variable
         var counter = 1
-        
+        when (counter <= 6 )
+
 
 
 
