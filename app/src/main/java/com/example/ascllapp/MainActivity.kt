@@ -14,21 +14,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //declared my variable
-        var sart = ""
+        var star= ""
 
         // get my textview come from activity_main
         val txtDisplay = findViewById<TextView>(R.id.txtDisplay)
 
         // decared the control variable
         var counter = 1
-        when (counter <= 6 )
+        while (counter <= 7) {
+            star += "*" .repeat(counter) + "\n"
+            counter++
+            txtDisplay.text = star
+        }
 
 
-
-
-
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(window.decorView){ v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
